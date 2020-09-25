@@ -1,0 +1,8 @@
+body,
+html {
+	background-color: bisque;
+}
+.header {
+	display: flex;
+	flex-direction: row;
+}
