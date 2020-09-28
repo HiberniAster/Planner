@@ -1,9 +1,10 @@
 .mainbox {
+	position: absolute;
+	left: 250px;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
 	width: 70vw;
-	/*border-left: 2px rgb(196, 190, 190) solid;
-	border-right: 2px rgb(196, 190, 190) solid;*/
+	border-left: 2px rgb(196, 190, 190) solid;
+	border-right: 2px rgb(196, 190, 190) solid;
 }

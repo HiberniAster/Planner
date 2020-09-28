@@ -1,7 +1,10 @@
+.logo {
+	margin-left: 30px;
+	margin-top: 10px;
+}
 .leftbox {
-	position: relative;
-	width: 100%;
-	width: 15vw;
+	position: absolute;
+	width: 200px;
 }
 
 .newPlan {
@@ -9,8 +12,8 @@
 	cursor: pointer;
 	background-color: rgb(241, 235, 228);
 	padding: 5px 0px;
-	width: 8vw;
-	height: 4vh;
+	width: 150px;
+	height: 40px;
 	text-align: center;
 	border-radius: 15px;
 	box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 3px 5px rgba(0, 0, 0, 0.08);
@@ -19,32 +22,43 @@
 	text-transform: uppercase;
 	font-weight: 800;
 	font-size: 12px;
-	margin-top: 10vh;
-	margin-left: 3vw;
+	margin-top: 40px;
+	margin-left: 50px;
+	z-index: 1;
 }
 
 .newPlan:active {
-	transform: scale(0.99);
+	transform: scale(0.98);
 }
 
 .button-icon {
 	position: absolute;
-	top: 10.8%;
-	left: 28%;
+	font-size: 35px;
+	top: 50px;
+	left: 70px;
+	z-index: 2;
 }
 .button-text {
 	position: absolute;
-	top: 12.1%;
-	left: 41%;
+	font-size: 15px;
+	top: 62px;
+	left: 105px;
 	color: cadetblue;
+	z-index: 2;
 }
 
 .plan-text {
-	font-size: 2vh;
+	font-size: 18px;
 }
 .plans {
-	margin-top: 3vh;
-	margin-left: 3vw;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+.plan {
+	margin-left: 10px;
+}
+.plan-top {
+	margin-top: 5px;
 }
 
 .rel-plan {
