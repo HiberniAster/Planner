@@ -1,10 +1,55 @@
+.box {
+	position: relative;
+	margin-left: 30px;
+}
+.header-box {
+	height: 80px;
+	border-left: 2px rgb(196, 190, 190) solid;
+	border-bottom: 1px rgb(196, 190, 190) solid;
+}
 .mainbox {
 	position: absolute;
-	left: 250px;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-	width: 70vw;
 	border-left: 2px rgb(196, 190, 190) solid;
-	border-right: 2px rgb(196, 190, 190) solid;
+	/*border-right: 2px rgb(196, 190, 190) solid;*/
+}
+.planViews {
+	padding: 100px;
+	display: flex;
+	flex-direction: column;
+}
+.planViews-first {
+	display: flex;
+	flex-direction: row;
+}
+.planViews-second {
+	display: flex;
+	flex-direction: row;
+}
+
+.planView__relative {
+	width: 270px;
+	height: 220px;
+	border: 1px rgb(121, 121, 121) solid;
+	border-radius: 20px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+}
+.planView-preview {
+	padding: 10px;
+	width: 100%;
+	height: 60%;
+}
+.planView-preview {
+	content: "";
+	display: block;
+	width: 93%;
+	border-bottom: rgb(121, 121, 121) 1px solid;
+}
+.planView-desc {
+	width: 100%;
+	height: 40%;
+	/*border-top: black 1px solid;*/
 }

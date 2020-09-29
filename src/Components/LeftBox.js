@@ -5,7 +5,7 @@ import logo from "../img/logo.png";
 function LeftBox() {
 	return (
 		<div className="allBox">
-			<img src={logo} className="logo" />
+			<img src={logo} className="logo" alt="logo" />
 			<div className="leftbox">
 				<i className="fas fa-plus fa-3x button-icon"></i>
 				<span className="button-text">새로 만들기</span>
