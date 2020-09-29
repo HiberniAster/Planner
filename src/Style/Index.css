@@ -33,6 +33,7 @@
 	width: 270px;
 	height: 220px;
 	border: 1px #1f4d89 solid;
+	box-shadow: 2px 2px 5px 0px rgba(173, 173, 173, 1);
 	border-radius: 20px;
 	margin-right: 100px;
 	margin-bottom: 100px;
