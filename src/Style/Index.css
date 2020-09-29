@@ -32,7 +32,7 @@
 .planView__relative {
 	width: 270px;
 	height: 220px;
-	border: 1px rgb(121, 121, 121) solid;
+	border: 1px #1f4d89 solid;
 	border-radius: 20px;
 	margin-right: 100px;
 	margin-bottom: 100px;
@@ -46,7 +46,7 @@
 	content: "";
 	display: block;
 	width: 93%;
-	border-bottom: rgb(121, 121, 121) 1px solid;
+	border-bottom: #1f4d89 1px solid;
 }
 .planView-desc {
 	width: 100%;
