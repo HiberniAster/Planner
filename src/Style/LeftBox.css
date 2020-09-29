@@ -1,6 +1,9 @@
 .logo {
-	margin-left: 30px;
+	margin-left: 18px;
 	margin-top: 10px;
+}
+.allBox {
+	width: 200px;
 }
 .leftbox {
 	position: absolute;
@@ -23,7 +26,7 @@
 	font-weight: 800;
 	font-size: 12px;
 	margin-top: 40px;
-	margin-left: 50px;
+	margin-left: 30px;
 	z-index: 1;
 }
 
@@ -37,14 +40,14 @@
 	position: absolute;
 	font-size: 30px;
 	top: 53px;
-	left: 65px;
+	left: 52px;
 	z-index: 2;
 }
 .button-text {
 	position: absolute;
 	font-size: 15px;
 	top: 60px;
-	left: 105px;
+	left: 88px;
 	color: cadetblue;
 	z-index: 2;
 }
@@ -54,7 +57,7 @@
 }
 .plans {
 	margin-top: 30px;
-	margin-left: 50px;
+	margin-left: 40px;
 }
 .plan {
 	margin-left: 15px;
