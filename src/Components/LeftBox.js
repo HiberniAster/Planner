@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Style/LeftBox.css";
 import logo from "../img/logo.png";
 
@@ -42,10 +43,14 @@ function timeCheckboxActived() {
 	});
 }
 
+function createPlanBtnClicked() {}
+
 function LeftBox() {
 	return (
 		<div className="allBox">
-			<img src={logo} className="logo" alt="logo" />
+			<Link to="/">
+				<img src={logo} className="logo" alt="logo" />
+			</Link>
 			<div className="leftbox">
 				<i className="fas fa-plus fa-3x button-icon"></i>
 				<span className="button-text">새로 만들기</span>
@@ -84,7 +89,8 @@ function LeftBox() {
 						부터 <input className="time time-end" />
 						까지
 					</div>
-					<button className="menu-confirmBtn">확인</button>
+
+					<Link to="/weekplan">확인</Link>
 				</div>
 				<ul className="plans rel-plan">
 					<span className="plan-text">최근 수정한 계획</span>

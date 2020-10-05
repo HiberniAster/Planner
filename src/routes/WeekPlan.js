@@ -4,9 +4,10 @@ import "../Style/WeekPlan.css";
 function WeekPlan() {
 	return (
 		<div className="weekplan-box">
-			<div className="weekplan-mainbox">
-				<span> Week plan!!!</span>
-			</div>
+			<header className="weekplan-header">헤더[요일 토글버튼]</header>
+			<main className="weekplan-main">
+				<span>메인 파트</span>
+			</main>
 		</div>
 	);
 }
