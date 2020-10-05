@@ -7,6 +7,7 @@
 }
 .leftbox {
 	position: absolute;
+
 	width: 200px;
 }
 
@@ -25,8 +26,9 @@
 	font-weight: 800;
 	font-size: 12px;
 	margin-top: 40px;
-	margin-left: 30px;
+	margin-left: 35px;
 	z-index: 1;
+	transform: height 1s;
 }
 
 .newPlan:active {
@@ -34,7 +36,21 @@
 	background-color: rgb(231, 225, 218);
 	box-shadow: 2px 2px 5px 1px rgba(166, 164, 166, 1);
 }
+.newPlan:hover {
+	/*height: 200px;*/
+}
 
+.menu-box {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	border: black 1px solid;
+	border-radius: 10px;
+	margin-left: 15px;
+	z-index: 2;
+	display: none;
+}
 .button-icon {
 	position: absolute;
 	font-size: 30px;
@@ -49,6 +65,28 @@
 	left: 88px;
 	color: black;
 	z-index: 2;
+}
+.menu-box__toggle {
+	margin-left: 47px;
+	margin-top: 20px;
+}
+.menu-toggle-button {
+	margin-bottom: 15px;
+	height: 40px;
+	width: 100px;
+}
+.menu-box__cycle {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.menu-box__appoint {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.time {
+	width: 80px;
+}
+.time-checkbox {
 }
 
 .plan-text {

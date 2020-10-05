@@ -10,29 +10,29 @@ function Index() {
 				<div className="planViews">
 					<div className="planViews-first">
 						<div className="planView__relative ">
-							<div class="planView-preview">미리보기 영역</div>
-							<div class="planView-desc">
+							<div className="planView-preview">미리보기 영역</div>
+							<div className="planView-desc">
 								<i className="fas fa-clipboard-list fa-2x plan-icon"></i>
 								<span className="plan-title">계획 제목</span>
 							</div>
 						</div>
 						<div className="planView__relative ">
-							<div class="planView-preview">미리보기 영역</div>
-							<div class="planView-desc">
+							<div className="planView-preview">미리보기 영역</div>
+							<div className="planView-desc">
 								<i className="fas fa-clipboard-list fa-2x plan-icon"></i>
 								<span className="plan-title">계획 제목</span>
 							</div>
 						</div>
 						<div className="planView__relative ">
-							<div class="planView-preview">미리보기 영역</div>
-							<div class="planView-desc">
+							<div className="planView-preview">미리보기 영역</div>
+							<div className="planView-desc">
 								<i className="fas fa-clipboard-list fa-2x plan-icon"></i>
 								<span className="plan-title">계획 제목</span>
 							</div>
 						</div>
 						<div className="planView__relative ">
-							<div class="planView-preview">미리보기 영역</div>
-							<div class="planView-desc">
+							<div className="planView-preview">미리보기 영역</div>
+							<div className="planView-desc">
 								<i className="fas fa-clipboard-list fa-2x plan-icon"></i>
 								<span className="plan-title">계획 제목</span>
 							</div>
@@ -40,29 +40,29 @@ function Index() {
 					</div>
 					<div className="planViews-second">
 						<div className="planView__relative ">
-							<div class="planView-preview"> 미리보기 영역</div>
-							<div class="planView-desc">
+							<div className="planView-preview"> 미리보기 영역</div>
+							<div className="planView-desc">
 								<i className="fas fa-chart-pie fa-2x plan-icon"></i>
 								<span className="plan-title">계획 제목</span>
 							</div>
 						</div>
 						<div className="planView__relative ">
-							<div class="planView-preview"> 미리보기 영역</div>
-							<div class="planView-desc">
+							<div className="planView-preview"> 미리보기 영역</div>
+							<div className="planView-desc">
 								<i className="fas fa-chart-pie fa-2x plan-icon"></i>
 								<span className="plan-title">계획 제목</span>
 							</div>
 						</div>
 						<div className="planView__relative ">
-							<div class="planView-preview"> 미리보기 영역</div>
-							<div class="planView-desc">
+							<div className="planView-preview"> 미리보기 영역</div>
+							<div className="planView-desc">
 								<i className="fas fa-chart-pie fa-2x plan-icon"></i>
 								<span className="plan-title">계획 제목</span>
 							</div>
 						</div>
 						<div className="planView__relative ">
-							<div class="planView-preview"> 미리보기 영역</div>
-							<div class="planView-desc">
+							<div className="planView-preview"> 미리보기 영역</div>
+							<div className="planView-desc">
 								<i className="fas fa-chart-pie fa-2x plan-icon"></i>
 								<span className="plan-title">계획 제목</span>
 							</div>
