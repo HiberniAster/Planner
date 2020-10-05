@@ -43,7 +43,7 @@
 .menu-box {
 	position: absolute;
 	width: 200px;
-	height: 200px;
+	height: 230px;
 	background-color: white;
 	border: black 1px solid;
 	border-radius: 10px;
@@ -68,7 +68,7 @@
 }
 .menu-box__toggle {
 	margin-left: 47px;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 .menu-toggle-button {
 	margin-bottom: 15px;
@@ -87,6 +87,14 @@
 	width: 80px;
 }
 .time-checkbox {
+}
+.time-start {
+	margin-top: 5px;
+}
+.menu-confirmBtn {
+	margin-top: 25px;
+	margin-left: 10px;
+	width: 180px;
 }
 
 .plan-text {

@@ -84,6 +84,7 @@ function LeftBox() {
 						부터 <input className="time time-end" />
 						까지
 					</div>
+					<button className="menu-confirmBtn">확인</button>
 				</div>
 				<ul className="plans rel-plan">
 					<span className="plan-text">최근 수정한 계획</span>
