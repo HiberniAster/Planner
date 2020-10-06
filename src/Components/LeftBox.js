@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Style/LeftBox.css";
 import logo from "../img/logo.png";
@@ -14,16 +14,6 @@ function newPlanButtonClicked() {
 	} else if (flag === true) {
 		flag = false;
 		menuBox.style.display = "block";
-	}
-}
-
-function menuToggleButtonClicked() {
-	let button = document.getElementsByClassName("menu-toggle-button")[0];
-
-	if (button.textContent === "원시간표") {
-		button.innerHTML = "주간시간표";
-	} else {
-		button.innerHTML = "원시간표";
 	}
 }
 
@@ -46,6 +36,24 @@ function timeCheckboxActived() {
 function createPlanBtnClicked() {}
 
 function LeftBox() {
+	function menuToggleButtonClicked() {
+		let button = document.getElementsByClassName("menu-toggle-button")[0];
+		setType(!type);
+		if (button.textContent === "원시간표") {
+			button.innerHTML = "주간시간표";
+		} else {
+			button.innerHTML = "원시간표";
+		}
+	}
+
+	function timeIntervalSelect() {
+		const selected = document.getElementsByClassName("time-interval")[0].value;
+		setTimeInterval(selected);
+	}
+
+	const [type, setType] = useState(true);
+	const [timeInterval, setTimeInterval] = useState("");
+
 	return (
 		<div className="allBox">
 			<Link to="/">
@@ -66,11 +74,13 @@ function LeftBox() {
 					</div>
 					<div className="menu-box__cycle">
 						<span>시간표 주기</span>
-						<select>
-							<option>10분</option>
-							<option>30분</option>
-							<option>60분</option>
-						</select>
+						<select className="time-interval" onChange={timeIntervalSelect}>
+							<option value="10">10분</option>
+							<option value="30">30분</option>
+							<option value="60">60분</option>
+						</select>{" "}
+						<br />
+						<span>You selected {timeInterval}</span>
 					</div>
 					<div className="menu-box__appoint">
 						<span>지정시간</span>
