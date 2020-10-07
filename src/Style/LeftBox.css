@@ -11,7 +11,7 @@
 	width: 200px;
 }
 
-.newPlan {
+.btn {
 	all: unset;
 	cursor: pointer;
 	background-color: white;
@@ -31,19 +31,16 @@
 	transform: height 1s;
 }
 
-.newPlan:active {
+.btn:active {
 	transform: scale(0.98);
 	background-color: rgb(231, 225, 218);
 	box-shadow: 2px 2px 5px 1px rgba(166, 164, 166, 1);
-}
-.newPlan:hover {
-	/*height: 200px;*/
 }
 
 .menu-box {
 	position: absolute;
 	width: 200px;
-	height: 230px;
+	height: 250px;
 	background-color: white;
 	border: black 1px solid;
 	border-radius: 10px;
@@ -91,12 +88,14 @@
 .time-start {
 	margin-top: 5px;
 }
-.menu-confirmBtn {
-	margin-top: 25px;
+.confirm-btn {
+	margin-top: 1px;
 	margin-left: 10px;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px #1f4d89 solid;
 	width: 180px;
 }
-
 .plan-text {
 	font-size: 18px;
 }

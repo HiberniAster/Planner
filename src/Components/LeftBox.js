@@ -24,16 +24,16 @@ function timeCheckboxActived() {
 		if (checkboxes[0].checked) {
 			checkboxes[1].checked = false;
 		}
+		checkboxes[0].removeEventListener("change", () => {});
 	});
 
 	checkboxes[1].addEventListener("change", () => {
 		if (checkboxes[1].checked) {
 			checkboxes[0].checked = false;
 		}
+		checkboxes[1].removeEventListener("change", () => {});
 	});
 }
-
-function createPlanBtnClicked() {}
 
 function LeftBox() {
 	function menuToggleButtonClicked() {
@@ -62,7 +62,7 @@ function LeftBox() {
 			<div className="leftbox">
 				<i className="fas fa-plus fa-3x button-icon"></i>
 				<span className="button-text">새로 만들기</span>
-				<button className="newPlan" onClick={newPlanButtonClicked}></button>
+				<button className="btn newPlan" onClick={newPlanButtonClicked}></button>
 				<div className="menu-box">
 					<div className="menu-box__toggle">
 						<button
@@ -95,12 +95,16 @@ function LeftBox() {
 							className="time-checkbox"
 							onClick={timeCheckboxActived}
 						/>
+						<br /> <br />
+						(24시) <br />
 						<input className="time time-start" />
 						부터 <input className="time time-end" />
 						까지
 					</div>
 
-					<Link to="/weekplan">확인</Link>
+					<Link to="/weekplan">
+						<button className="confirm-btn">확인</button>
+					</Link>
 				</div>
 				<ul className="plans rel-plan">
 					<span className="plan-text">최근 수정한 계획</span>
