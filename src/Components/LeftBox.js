@@ -102,9 +102,15 @@ function LeftBox() {
 						까지
 					</div>
 
-					<Link to="/weekplan">
-						<button className="confirm-btn">확인</button>
-					</Link>
+					{type ? (
+						<Link to="/weekplan">
+							<button className="confirm-btn">주간 계획표</button>
+						</Link>
+					) : (
+						<Link to="/pieplan">
+							<button className="confirm-btn">원 계획표</button>
+						</Link>
+					)}
 				</div>
 				<ul className="plans rel-plan">
 					<span className="plan-text">최근 수정한 계획</span>
