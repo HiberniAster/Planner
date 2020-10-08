@@ -17,24 +17,6 @@ function newPlanButtonClicked() {
 	}
 }
 
-function timeCheckboxActived() {
-	let checkboxes = document.getElementsByClassName("time-checkbox");
-
-	checkboxes[0].addEventListener("change", () => {
-		if (checkboxes[0].checked) {
-			checkboxes[1].checked = false;
-		}
-		checkboxes[0].removeEventListener("change", () => {});
-	});
-
-	checkboxes[1].addEventListener("change", () => {
-		if (checkboxes[1].checked) {
-			checkboxes[0].checked = false;
-		}
-		checkboxes[1].removeEventListener("change", () => {});
-	});
-}
-
 function LeftBox() {
 	function menuToggleButtonClicked() {
 		let button = document.getElementsByClassName("menu-toggle-button")[0];
@@ -51,8 +33,30 @@ function LeftBox() {
 		setTimeInterval(selected);
 	}
 
+	function timeCheckboxActived() {
+		let checkboxes = document.getElementsByClassName("time-checkbox");
+
+		checkboxes[0].addEventListener("change", () => {
+			setTimeCheckbox("specified");
+			if (checkboxes[0].checked) {
+				checkboxes[1].checked = false;
+			}
+			checkboxes[0].removeEventListener("change", () => {});
+		});
+
+		checkboxes[1].addEventListener("change", () => {
+			setTimeCheckbox("24");
+
+			if (checkboxes[1].checked) {
+				checkboxes[0].checked = false;
+			}
+			checkboxes[1].removeEventListener("change", () => {});
+		});
+	}
+
 	const [type, setType] = useState(true);
-	const [timeInterval, setTimeInterval] = useState("");
+	const [timeInterval, setTimeInterval] = useState("10");
+	const [timeCheckbox, setTimeCheckbox] = useState("specified");
 
 	return (
 		<div className="allBox">
@@ -87,6 +91,7 @@ function LeftBox() {
 						<input
 							type="checkbox"
 							className="time-checkbox"
+							defaultChecked="true"
 							onClick={timeCheckboxActived}
 						/>{" "}
 						or <span>24시</span>
@@ -94,7 +99,9 @@ function LeftBox() {
 							type="checkbox"
 							className="time-checkbox"
 							onClick={timeCheckboxActived}
-						/>
+						/>{" "}
+						<br />
+						<span>You checked {timeCheckbox}</span>
 						<br /> <br />
 						(24시) <br />
 						<input className="time time-start" />
@@ -103,7 +110,12 @@ function LeftBox() {
 					</div>
 
 					{type ? (
-						<Link to="/weekplan">
+						<Link
+							to={{
+								pathname: "/weekplan",
+								state: { timeInterval: timeInterval },
+							}}
+						>
 							<button className="confirm-btn">주간 계획표</button>
 						</Link>
 					) : (
