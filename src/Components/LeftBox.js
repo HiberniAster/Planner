@@ -137,7 +137,12 @@ function LeftBox() {
               <button className="confirm-btn">주간 계획표</button>
             </Link>
           ) : (
-            <Link to="/pieplan">
+            <Link
+              to={{
+                pathname: "/pieplan",
+                state: { timeInterval: timeInterval },
+              }}
+            >
               <button className="confirm-btn">원 계획표</button>
             </Link>
           )}
