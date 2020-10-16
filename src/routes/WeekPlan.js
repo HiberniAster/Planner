@@ -15,4 +15,5 @@ function WeekPlan(props) {
   );
 }
 
+//이곳은 시간표의 변경 사안을 전송하고, 이 시간표에 해당하는 id를 가진 정보를 가져와야 한다.
 export default WeekPlan;

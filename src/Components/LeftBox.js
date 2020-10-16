@@ -170,4 +170,7 @@ function LeftBox() {
   );
 }
 
+//여기서는 정보를 state에 전달해야 한다. 즉, 새로운 시간표 작성하는 명령을 전달해야함.
+function dispachSomthing() {}
+
 export default LeftBox;
